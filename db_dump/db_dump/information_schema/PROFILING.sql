@@ -1,0 +1,43 @@
+-- --------------------------------------------------------
+-- ホスト:                          localhost
+-- サーバーのバージョン:                   10.1.32-MariaDB - mariadb.org binary distribution
+-- サーバー OS:                      Win32
+-- HeidiSQL バージョン:               9.5.0.5196
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+--  テーブル information_schema.PROFILING の構造をダンプしています
+DROP TABLE IF EXISTS `PROFILING`;
+CREATE TEMPORARY TABLE IF NOT EXISTS `PROFILING` (
+  `QUERY_ID` int(20) NOT NULL DEFAULT '0',
+  `SEQ` int(20) NOT NULL DEFAULT '0',
+  `STATE` varchar(30) NOT NULL DEFAULT '',
+  `DURATION` decimal(9,6) NOT NULL DEFAULT '0.000000',
+  `CPU_USER` decimal(9,6) DEFAULT NULL,
+  `CPU_SYSTEM` decimal(9,6) DEFAULT NULL,
+  `CONTEXT_VOLUNTARY` int(20) DEFAULT NULL,
+  `CONTEXT_INVOLUNTARY` int(20) DEFAULT NULL,
+  `BLOCK_OPS_IN` int(20) DEFAULT NULL,
+  `BLOCK_OPS_OUT` int(20) DEFAULT NULL,
+  `MESSAGES_SENT` int(20) DEFAULT NULL,
+  `MESSAGES_RECEIVED` int(20) DEFAULT NULL,
+  `PAGE_FAULTS_MAJOR` int(20) DEFAULT NULL,
+  `PAGE_FAULTS_MINOR` int(20) DEFAULT NULL,
+  `SWAPS` int(20) DEFAULT NULL,
+  `SOURCE_FUNCTION` varchar(30) DEFAULT NULL,
+  `SOURCE_FILE` varchar(20) DEFAULT NULL,
+  `SOURCE_LINE` int(20) DEFAULT NULL
+) ENGINE=MEMORY DEFAULT CHARSET=utf8;
+
+-- テーブル information_schema.PROFILING: 0 rows のデータをダンプしています
+/*!40000 ALTER TABLE `PROFILING` DISABLE KEYS */;
+/*!40000 ALTER TABLE `PROFILING` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

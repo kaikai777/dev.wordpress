@@ -1,0 +1,145 @@
+-- --------------------------------------------------------
+-- ホスト:                          localhost
+-- サーバーのバージョン:                   10.1.32-MariaDB - mariadb.org binary distribution
+-- サーバー OS:                      Win32
+-- HeidiSQL バージョン:               9.5.0.5196
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+--  テーブル information_schema.INNODB_SYS_FIELDS の構造をダンプしています
+DROP TABLE IF EXISTS `INNODB_SYS_FIELDS`;
+CREATE TEMPORARY TABLE IF NOT EXISTS `INNODB_SYS_FIELDS` (
+  `INDEX_ID` bigint(21) unsigned NOT NULL DEFAULT '0',
+  `NAME` varchar(193) NOT NULL DEFAULT '',
+  `POS` int(11) unsigned NOT NULL DEFAULT '0'
+) ENGINE=MEMORY DEFAULT CHARSET=utf8;
+
+-- テーブル information_schema.INNODB_SYS_FIELDS: 116 rows のデータをダンプしています
+/*!40000 ALTER TABLE `INNODB_SYS_FIELDS` DISABLE KEYS */;
+INSERT INTO `INNODB_SYS_FIELDS` (`INDEX_ID`, `NAME`, `POS`) VALUES
+	(11, 'ID', 0),
+	(12, 'FOR_NAME', 0),
+	(13, 'REF_NAME', 0),
+	(14, 'ID', 0),
+	(14, 'POS', 1),
+	(15, 'SPACE', 0),
+	(16, 'SPACE', 0),
+	(17, 'database_name', 0),
+	(17, 'table_name', 1),
+	(18, 'database_name', 0),
+	(18, 'table_name', 1),
+	(18, 'index_name', 2),
+	(18, 'stat_name', 3),
+	(19, 'Id', 0),
+	(20, 'Host', 0),
+	(20, 'Port', 1),
+	(21, 'Id', 0),
+	(27, 'domain_id', 0),
+	(27, 'sub_id', 1),
+	(28, 'id', 0),
+	(29, 'id', 0),
+	(30, 'db_name', 0),
+	(30, 'table_name', 1),
+	(30, 'column_name', 2),
+	(31, 'id', 0),
+	(32, 'username', 0),
+	(32, 'db', 1),
+	(32, 'table', 2),
+	(32, 'timevalue', 3),
+	(33, 'page_nr', 0),
+	(34, 'db_name', 0),
+	(35, 'username', 0),
+	(36, 'username', 0),
+	(37, 'username', 0),
+	(37, 'db_name', 1),
+	(37, 'table_name', 2),
+	(38, 'master_db', 0),
+	(38, 'master_table', 1),
+	(38, 'master_field', 2),
+	(39, 'foreign_db', 0),
+	(39, 'foreign_table', 1),
+	(40, 'db_name', 0),
+	(40, 'table_name', 1),
+	(40, 'pdf_page_number', 2),
+	(41, 'db_name', 0),
+	(41, 'table_name', 1),
+	(42, 'db_name', 0),
+	(42, 'table_name', 1),
+	(42, 'version', 2),
+	(43, 'username', 0),
+	(44, 'username', 0),
+	(44, 'usergroup', 1),
+	(45, 'usergroup', 0),
+	(45, 'tab', 1),
+	(45, 'allowed', 2),
+	(46, 'username', 0),
+	(46, 'item_name', 1),
+	(46, 'item_type', 2),
+	(46, 'db_name', 3),
+	(46, 'table_name', 4),
+	(47, 'id', 0),
+	(48, 'username', 0),
+	(48, 'db_name', 1),
+	(48, 'search_name', 2),
+	(49, 'db_name', 0),
+	(49, 'col_name', 1),
+	(50, 'username', 0),
+	(51, 'id', 0),
+	(52, 'username', 0),
+	(52, 'export_type', 1),
+	(52, 'template_name', 2),
+	(53, 'ID', 0),
+	(54, 'user_login', 0),
+	(55, 'user_nicename', 0),
+	(56, 'user_email', 0),
+	(57, 'umeta_id', 0),
+	(58, 'user_id', 0),
+	(59, 'meta_key', 0),
+	(60, 'meta_id', 0),
+	(61, 'term_id', 0),
+	(62, 'meta_key', 0),
+	(63, 'term_id', 0),
+	(64, 'slug', 0),
+	(65, 'name', 0),
+	(66, 'term_taxonomy_id', 0),
+	(67, 'term_id', 0),
+	(67, 'taxonomy', 1),
+	(68, 'taxonomy', 0),
+	(69, 'object_id', 0),
+	(69, 'term_taxonomy_id', 1),
+	(70, 'term_taxonomy_id', 0),
+	(71, 'meta_id', 0),
+	(72, 'comment_id', 0),
+	(73, 'meta_key', 0),
+	(74, 'comment_ID', 0),
+	(75, 'comment_post_ID', 0),
+	(76, 'comment_approved', 0),
+	(76, 'comment_date_gmt', 1),
+	(77, 'comment_date_gmt', 0),
+	(78, 'comment_parent', 0),
+	(79, 'comment_author_email', 0),
+	(80, 'link_id', 0),
+	(81, 'link_visible', 0),
+	(82, 'option_id', 0),
+	(83, 'option_name', 0),
+	(84, 'meta_id', 0),
+	(85, 'post_id', 0),
+	(86, 'meta_key', 0),
+	(87, 'ID', 0),
+	(88, 'post_name', 0),
+	(89, 'post_type', 0),
+	(89, 'post_status', 1),
+	(89, 'post_date', 2),
+	(89, 'ID', 3),
+	(90, 'post_parent', 0),
+	(91, 'post_author', 0);
+/*!40000 ALTER TABLE `INNODB_SYS_FIELDS` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

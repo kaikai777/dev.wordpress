@@ -1,0 +1,49 @@
+-- --------------------------------------------------------
+-- ホスト:                          localhost
+-- サーバーのバージョン:                   10.1.32-MariaDB - mariadb.org binary distribution
+-- サーバー OS:                      Win32
+-- HeidiSQL バージョン:               9.5.0.5196
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+--  テーブル information_schema.EVENTS の構造をダンプしています
+DROP TABLE IF EXISTS `EVENTS`;
+CREATE TEMPORARY TABLE IF NOT EXISTS `EVENTS` (
+  `EVENT_CATALOG` varchar(64) NOT NULL DEFAULT '',
+  `EVENT_SCHEMA` varchar(64) NOT NULL DEFAULT '',
+  `EVENT_NAME` varchar(64) NOT NULL DEFAULT '',
+  `DEFINER` varchar(189) NOT NULL DEFAULT '',
+  `TIME_ZONE` varchar(64) NOT NULL DEFAULT '',
+  `EVENT_BODY` varchar(8) NOT NULL DEFAULT '',
+  `EVENT_DEFINITION` longtext NOT NULL,
+  `EVENT_TYPE` varchar(9) NOT NULL DEFAULT '',
+  `EXECUTE_AT` datetime DEFAULT NULL,
+  `INTERVAL_VALUE` varchar(256) DEFAULT NULL,
+  `INTERVAL_FIELD` varchar(18) DEFAULT NULL,
+  `SQL_MODE` varchar(8192) NOT NULL DEFAULT '',
+  `STARTS` datetime DEFAULT NULL,
+  `ENDS` datetime DEFAULT NULL,
+  `STATUS` varchar(18) NOT NULL DEFAULT '',
+  `ON_COMPLETION` varchar(12) NOT NULL DEFAULT '',
+  `CREATED` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `LAST_ALTERED` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `LAST_EXECUTED` datetime DEFAULT NULL,
+  `EVENT_COMMENT` varchar(64) NOT NULL DEFAULT '',
+  `ORIGINATOR` bigint(10) NOT NULL DEFAULT '0',
+  `CHARACTER_SET_CLIENT` varchar(32) NOT NULL DEFAULT '',
+  `COLLATION_CONNECTION` varchar(32) NOT NULL DEFAULT '',
+  `DATABASE_COLLATION` varchar(32) NOT NULL DEFAULT ''
+) ENGINE=Aria DEFAULT CHARSET=utf8 PAGE_CHECKSUM=0;
+
+-- テーブル information_schema.EVENTS: 0 rows のデータをダンプしています
+/*!40000 ALTER TABLE `EVENTS` DISABLE KEYS */;
+/*!40000 ALTER TABLE `EVENTS` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
